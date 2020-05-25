@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="UA-X-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbaord</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="images/home.png" sizes="64x64" type="image/png">
+    <link rel="stylesheet" href="css/web.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="dashboard">
+      <div class="container">
+        <div class="content">
+          <!-- Start Header -->
+          <header>
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="brand"><h2>LOGO</h2></div>
+              </div>
+              <div class="col-xs-8">
+                <div class="dep-name">
+                  <div>
+                    <h3>KNOWLEDGE COMPETENCY BASE</h3>
+                    <span>DASHBOARD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- End Header -->
+          <!-- Start Content -->
+          <section>
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                  <!-- Start StaFF InFormation -->
+                  <div class="user-info">
+                      <h2>staff info</h2>
+                      <div class="user">
+                          <img src="images/avatar.svg" alt="avater" title="" width="64" height="64" />
+                          <div>
+                              <h4>khaled ahmed</h4>
+                              <ul>
+                                  <li>
+                                      <label>jobID</label><span>: 1000901</span>
+                                  </li>
+                                  <li>
+                                      <label>email</label><span>: email@name.com</span>
+                                  </li>
+                                  <li>
+                                      <label>dep</label><span>: DCC</span></li>
+                                  <li>
+                                      <label>group</label><span>: X</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End StaFF InFormation -->
+
+                  <!-- Start Departement -->
+                  <div class="departement">
+                      <h2>departements</h2>
+                      <div class="dep-item">
+                          <a href="articles.html">
+                              <span class="active">departement 1</span></a>
+                          <a href="articles.html">
+                              <span class="active">departement 2</span></a>
+                          <a href="articles.html">
+                              <span class="active">departement 3</span></a>
+                          <a href="articles.html">
+                              <span class="active">departement 4</span></a>
+                          <a href="articles.html"><span>departement 5</span></a>
+                          <a href="articles.html"><span>departement 6</span></a>
+                      </div>
+                  </div>
+                  <!-- End Departement -->
+              </div>
+              <!--Start Progress -->
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="progress-info">
+                    <h2>progress</h2>
+                    <div class="my-progress-bar"></div>
+                </div>
+              </div>
+              <!-- End Progress -->
+            </div>
+          </section>
+          <!-- End Content -->
+          <!-- Start Footer -->
+          <footer>
+            <div>
+                <span>All Right Reserved CopyRight &copy; Saber Belkhir</span>
+            </div>
+          </footer>
+          <!-- End Footer -->
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugin.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $(".my-progress-bar").circularProgress({
+              line_width: 12,
+              color: "#24ab92",
+              starting_position: 50,
+              percent: 0,
+              percentage: true,
+          }).circularProgress('animate', 75, 5000);
+      });
+    </script>
+</body>
+</html>
